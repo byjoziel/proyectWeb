@@ -262,6 +262,16 @@
     justify-content: space-between;
     align-items: center;
     gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+     pointer-events: none;
+
+}
+.test_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
 }
 .test_img{
     width: 250px;
@@ -275,8 +285,14 @@
     max-width: 700px;
 
 }
+.test_course{
+    background-color: royalblue;
+    display: inline-block;
+    padding: 5px;
+    
+}
 .test_arrow{
     width: 90%;
     cursor: pointer;
-    
+     
 }
